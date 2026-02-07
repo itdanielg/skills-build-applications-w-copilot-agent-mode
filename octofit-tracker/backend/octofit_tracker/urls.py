@@ -25,6 +25,13 @@ router.register(r'activities', ActivityViewSet)
 router.register(r'leaderboard', LeaderboardViewSet)
 router.register(r'workouts', WorkoutViewSet)
 
+from django.conf import settings
+import os
+
+# Dynamically build API base URL using $CODESPACE_NAME
+codespace_name = os.environ.get('CODESPACE_NAME', 'localhost')
+api_base_url = f"https://{codespace_name}-8000.app.github.dev/api/"
+
 urlpatterns = [
     path('', api_root, name='api_root'),
     path('admin/', admin.site.urls),
