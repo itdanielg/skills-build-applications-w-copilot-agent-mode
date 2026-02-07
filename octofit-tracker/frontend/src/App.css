@@ -1,0 +1,145 @@
+
+body {
+  background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+  min-height: 100vh;
+}
+
+.App {
+  text-align: center;
+  color: #2a2a2a;
+}
+
+
+.octofit-logo {
+  height: 48px;
+  margin-right: 16px;
+  vertical-align: middle;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+.App-header {
+  background: #1a237e;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #fff;
+}
+
+
+.App-link, .navbar a, .nav-link, .navbar-brand {
+  color: #1976d2 !important;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.App-link:hover, .navbar a:hover, .nav-link:hover, .navbar-brand:hover {
+  color: #0d47a1 !important;
+  text-decoration: underline;
+}
+
+.navbar {
+  background: linear-gradient(90deg, #1976d2 0%, #42a5f5 100%) !important;
+  box-shadow: 0 2px 8px rgba(33, 150, 243, 0.1);
+}
+.navbar-brand, .navbar-nav .nav-link {
+  color: #fff !important;
+}
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+.navbar-nav .nav-link.active {
+  color: #ffd600 !important;
+}
+
+/* Headings */
+h1, h2, h3, .card-title {
+  color: #1976d2;
+  font-weight: 700;
+}
+
+/* Tables */
+.table {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(33, 150, 243, 0.05);
+}
+.table th {
+  background: #1976d2;
+  color: #fff;
+}
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #e3f2fd;
+}
+.table-bordered th, .table-bordered td {
+  border-color: #90caf9;
+}
+
+/* Buttons */
+.btn, .btn-primary {
+  background: linear-gradient(90deg, #1976d2 0%, #42a5f5 100%);
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+.btn:hover, .btn-primary:hover {
+  background: linear-gradient(90deg, #0d47a1 0%, #1976d2 100%);
+  color: #ffd600;
+}
+
+/* Cards */
+.card {
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(33, 150, 243, 0.08);
+  border: none;
+}
+.card-title {
+  color: #1976d2;
+}
+
+/* Modals */
+.modal-content {
+  border-radius: 10px;
+  box-shadow: 0 2px 16px rgba(33, 150, 243, 0.12);
+}
+.modal-header {
+  background: #1976d2;
+  color: #fff;
+}
+.modal-footer {
+  background: #e3f2fd;
+}
+
+/* Forms */
+.form-control:focus {
+  border-color: #1976d2;
+  box-shadow: 0 0 0 0.2rem rgba(33, 150, 243, 0.15);
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
